@@ -2,10 +2,11 @@
 import pandas as pd
 
 # Assign spreadsheet filename to `file`
-file = 'test_input.xlsx'
+mydir='app_excell2txt'
+myfile = 'test_input.xlsx'
 
 # Load spreadsheet
-xl = pd.ExcelFile(file)
+xl = pd.ExcelFile(mydir + '\\' + myfile)
 
 # Print the sheet names
 print(xl.sheet_names)
